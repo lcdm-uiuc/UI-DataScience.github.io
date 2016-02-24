@@ -260,6 +260,14 @@ form {
 Full-Width Styles
 *******************************************************************************/
 
+#sidebar {
+    position:absolute;
+    top:300px; bottom:0; right:100px;
+    padding: 10px 10px 10px 10px;
+    width:150px;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+
 .outer {
   width: 100%;
 }
