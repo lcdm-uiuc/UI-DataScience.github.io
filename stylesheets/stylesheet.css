@@ -239,6 +239,17 @@ table {
   text-align: left;
  }
 
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+    background-color: #fff;
+}
+table#t01 th {
+    color: white;
+    background-color: #333333;
+}
+
 th {
   font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   padding: 10px;
@@ -261,11 +272,16 @@ Full-Width Styles
 *******************************************************************************/
 
 #sidebar {
-    position:absolute;
-    top:300px; bottom:0; right:100px;
-    padding: 10px 10px 10px 10px;
-    width:150px;
-    box-shadow: 0 0 10px rgba(0,0,0,.5);
+  float:right;
+}
+
+#sidebar {
+  margin-right: 100px;
+  margin-left: 20px;
+  margin-top: 100px;
+  padding:10px;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  background: #212121;
 }
 
 .outer {
