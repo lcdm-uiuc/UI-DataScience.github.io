@@ -6,9 +6,48 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 28 Feb 2016 19:34:41 -0600</pubDate>
-    <lastBuildDate>Sun, 28 Feb 2016 19:34:41 -0600</lastBuildDate>
+    <pubDate>Sun, 28 Feb 2016 22:45:01 -0600</pubDate>
+    <lastBuildDate>Sun, 28 Feb 2016 22:45:01 -0600</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>Hello World!</title>
+        <description>&lt;p&gt;Hello, World! This is the first post from the UI-Data Science Blog/News feed. All the members of our group will be able to create markdown files to share their ideas and accomplishments with the outside world. This blog is run with &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; and the site is hosted by &lt;a href=&quot;https://pages.github.com/&quot;&gt;Github Pages&lt;/a&gt;. The past few weeks have been very humbling as I’ve tried to get this site and blog off the ground. Finally this hacking endeavor has resulted in this semi-functional tool that I hope our group will use for years to come. Lets take a quick tour of Jekyll’s (and markdown’s) features.&lt;/p&gt;
+
+&lt;h4 id=&quot;markdown-styling&quot;&gt;Markdown Styling&lt;/h4&gt;
+
+&lt;p&gt;I could go through the rigmarole of demonstrating markdown syntax, but &lt;a href=&quot;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&quot;&gt;this cheatsheet&lt;/a&gt; has already done that for you. Check it out, it’s pretty thorough.&lt;/p&gt;
+
+&lt;h4 id=&quot;syntax-highlighting&quot;&gt;Syntax Highlighting&lt;/h4&gt;
+
+&lt;p&gt;Those familiar with markdown already know of the backticks for code formatting, such as &lt;code class=&quot;highlighter-rouge&quot;&gt;code&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;directory&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;mv /bin /dev/null&lt;/code&gt; (NEVER execute that in a linux terminal by the way, although it shouldn’t let you anyway). But Jekyll has special syntax highlighting dependent on the language (this is Python):&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;hello_world&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;Hello World&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;I’m certainly not a markdown expert, but you get the picture.&lt;/p&gt;
+
+&lt;h4 id=&quot;creating-new-posts&quot;&gt;Creating New Posts&lt;/h4&gt;
+
+&lt;p&gt;The &lt;a href=&quot;http://jekyllrb.com/docs/posts/&quot;&gt;Jekyll Docs&lt;/a&gt; do a pretty concise job of explaining how to create posts, and it involves creating a markdown file in a certain directory (&lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt;) following a certain convention. I can picture more than one automated and more user-friendly way of doing that, so that may be an interesting direction to move in the future.&lt;/p&gt;
+
+&lt;h4 id=&quot;things-to-note&quot;&gt;Things to Note&lt;/h4&gt;
+
+&lt;p&gt;Currently only the most recent post will be shown on the front page. The full blog is available through our &lt;a href=&quot;http://ui-datascience.github.io/blog&quot;&gt;blog page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;-Andrew Mehrmann (github: @dkmehrmann)&lt;/p&gt;
+</description>
+        <pubDate>Sun, 28 Feb 2016 22:01:00 -0600</pubDate>
+        <link>http://yourdomain.com/initial/datascience/2016/02/28/Hello-World.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/initial/datascience/2016/02/28/Hello-World.html</guid>
+        
+        
+        <category>Initial</category>
+        
+        <category>DataScience</category>
+        
+      </item>
     
       <item>
         <title>Welcome to Jekyll!</title>
