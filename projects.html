@@ -2,27 +2,28 @@
 layout: custom
 ---
 
-<div class="home">
+<div class="home" style='margin:20px'>
 
-  <h1 class="page-heading">Projects</h1>
+  <h1 class="page-header">Project Feed</h1>
 
-  <ul class="post-list">
-    {% for post in site.categories.project %}
+  <div class='well'>
+    <ul class="post-list">
+      {% for post in site.categories.project %}
+        
+        
+          <h3>
+            {{ post.title }}
+          </h3>
+
+          <span class="text-success">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <p>{{ post.content | strip_html | truncatewords:75}}</p>
+        <a href="{{ post.url }}">Read more...</a><br>
       
-      
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      {% endfor %}
+    </ul>
 
-      </li>
-      <p>{{ post.content | strip_html | truncatewords:75}}</p>
-      <a href="{{ post.url }}">Read more...</a><br>
-    
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+     <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  </div>
 
 </div>

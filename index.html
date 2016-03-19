@@ -2,27 +2,31 @@
 layout: custom
 ---
 
-<div class="home">
+<div class="home" style='margin:20px'>
 
-  <h2 class="page-heading">News</h2>
+  <h1 class='page-header'>Recent News</h1>
 
-  <ul class="post-list">
-    {% for post in site.categories.post limit:1 %}
+  <div class='well'>
+    <ul class="post-list">
+      {% for post in site.categories.post limit:1 %}
+        
+        
+          <h3>
+            {{ post.title }}
+          </h3>
+
+          <span class="text-success">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <p>{{ post.content | strip_html | truncatewords:75}}</p>
+        
+        <a href="{{ post.url | prepend: site.baseurl }}">Read more...</a><br>
       
-      
-        <h3>
-          {{ post.title }}
-        </h3>
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-      </li>
-      <p>{{ post.content | strip_html | truncatewords:75}}</p>
-      <a href="{{ post.url | prepend: site.baseurl }}">Read more...</a><br>
-    
-    {% endfor %}
-  </ul>
-
+      {% endfor %}
+    </ul>
   <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  </div>
+
+  
 
   {% include custom_about.html %}
 
