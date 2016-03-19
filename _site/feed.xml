@@ -6,9 +6,55 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 28 Feb 2016 22:45:01 -0600</pubDate>
-    <lastBuildDate>Sun, 28 Feb 2016 22:45:01 -0600</lastBuildDate>
+    <pubDate>Sat, 19 Mar 2016 12:03:12 -0500</pubDate>
+    <lastBuildDate>Sat, 19 Mar 2016 12:03:12 -0500</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>My Project Title</title>
+        <description>&lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;/h2&gt;
+
+&lt;p&gt;Hello, World! This is the first example project post! In this section you may wish to include the “abstract” of your project, which is a short description that covers the motivation, proposed methods, and perhaps initial findings.&lt;/p&gt;
+
+&lt;h2 id=&quot;people&quot;&gt;People&lt;/h2&gt;
+
+&lt;p&gt;This section should be similar to the would-be authors of whatever paper you might write. Example:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Professor Robert J. Brunner, Department of Astronomy&lt;/li&gt;
+  &lt;li&gt;Andrew Mehrmann, Department of Statistics&lt;/li&gt;
+  &lt;li&gt;Another Student, Department of Underwater Basket Weaving&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;p&gt;This section should include the papers or software your project is based on. It also may be a good place to keep track of this kind of thing.&lt;/p&gt;
+
+&lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
+
+&lt;p&gt;You might want to link to your github repository or specific project folder. It would be a good idea to have a README.md in there to welcome curious visitors.&lt;/p&gt;
+
+&lt;h2 id=&quot;notes-on-creating-a-post&quot;&gt;Notes on Creating a Post&lt;/h2&gt;
+
+&lt;p&gt;You have to follow the naming convention of this post &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;date&amp;gt;&amp;lt;your-title&amp;gt;.markdown&lt;/code&gt;. This file must be in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. You also have to make sure the header is formatted correctly:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;layout&lt;/code&gt;: don’t change this, it should read &lt;strong&gt;post&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;title&lt;/code&gt;: Title of your project&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;date&lt;/code&gt;: follow the convention, and be very exact. Also make sure the date/time isn’t in the future (remember DST!)&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;categories&lt;/code&gt;: must read &lt;em&gt;project&lt;/em&gt;. This is how Jekyll knows where to put which posts.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;-Andrew Mehrmann (github: @dkmehrmann)&lt;/p&gt;
+</description>
+        <pubDate>Sat, 19 Mar 2016 11:25:00 -0500</pubDate>
+        <link>http://yourdomain.com/project/2016/03/19/initial-project.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/project/2016/03/19/initial-project.html</guid>
+        
+        
+        <category>project</category>
+        
+      </item>
     
       <item>
         <title>Hello World!</title>
@@ -34,18 +80,23 @@
 
 &lt;h4 id=&quot;things-to-note&quot;&gt;Things to Note&lt;/h4&gt;
 
-&lt;p&gt;Currently only the most recent post will be shown on the front page. The full blog is available through our &lt;a href=&quot;http://ui-datascience.github.io/blog&quot;&gt;blog page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Currently only the most recent post will be shown on the front page. The full blog is available through our &lt;a href=&quot;http://ui-datascience.github.io/blog&quot;&gt;blog page&lt;/a&gt;. In order for your blog post to show up in the right place, you’ll have to name the file as this one is named and update the header:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;layout&lt;/code&gt;: don’t change this and make sure it reads &lt;strong&gt;post&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;title&lt;/code&gt;: Name your post!&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;date&lt;/code&gt;: follows a very strict convention. Make sure the time isn’t in the future or you may experience frustration at your post not showing up.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;categories&lt;/code&gt;: Make sure &lt;strong&gt;post&lt;/strong&gt; is somewhere in there. In the future we may wish to organize blogs by category, but for now don’t worry about this (expect that it reads &lt;strong&gt;post&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;-Andrew Mehrmann (github: @dkmehrmann)&lt;/p&gt;
 </description>
         <pubDate>Sun, 28 Feb 2016 22:01:00 -0600</pubDate>
-        <link>http://yourdomain.com/initial/datascience/2016/02/28/Hello-World.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/initial/datascience/2016/02/28/Hello-World.html</guid>
+        <link>http://yourdomain.com/post/2016/02/28/Hello-World.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/post/2016/02/28/Hello-World.html</guid>
         
         
-        <category>Initial</category>
-        
-        <category>DataScience</category>
+        <category>post</category>
         
       </item>
     
@@ -67,13 +118,11 @@
 
 </description>
         <pubDate>Sun, 28 Feb 2016 16:20:56 -0600</pubDate>
-        <link>http://yourdomain.com/jekyll/update/2016/02/28/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2016/02/28/welcome-to-jekyll.html</guid>
+        <link>http://yourdomain.com/post/2016/02/28/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/post/2016/02/28/welcome-to-jekyll.html</guid>
         
         
-        <category>jekyll</category>
-        
-        <category>update</category>
+        <category>post</category>
         
       </item>
     

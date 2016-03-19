@@ -4,26 +4,25 @@ layout: custom
 
 <div class="home">
 
-  <h2 class="page-heading">News</h2>
+  <h1 class="page-heading">News</h1>
 
   <ul class="post-list">
-    {% for post in site.categories.post limit:1 %}
+    {% for post in site.categories.post %}
       
       
-        <h3>
-          {{ post.title }}
-        </h3>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
       </li>
       <p>{{ post.content | strip_html | truncatewords:75}}</p>
-      <a href="{{ post.url | prepend: site.baseurl }}">Read more...</a><br>
+      <a href="{{ post.url }}">Read more...</a><br>
     
     {% endfor %}
   </ul>
 
   <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-  {% include custom_about.html %}
 
 </div>

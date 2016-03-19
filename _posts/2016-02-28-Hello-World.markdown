@@ -2,7 +2,7 @@
 layout: post
 title:  "Hello World!"
 date:   2016-02-28 22:01:00 -0600
-categories: Initial DataScience
+categories: post
 ---
 
 Hello, World! This is the first post from the UI-Data Science Blog/News feed. All the members of our group will be able to create markdown files to share their ideas and accomplishments with the outside world. This blog is run with [Jekyll](https://jekyllrb.com/) and the site is hosted by [Github Pages](https://pages.github.com/). The past few weeks have been very humbling as I've tried to get this site and blog off the ground. Finally this hacking endeavor has resulted in this semi-functional tool that I hope our group will use for years to come. Lets take a quick tour of Jekyll's (and markdown's) features.
@@ -29,6 +29,11 @@ The [Jekyll Docs](http://jekyllrb.com/docs/posts/) do a pretty concise job of ex
 
 #### Things to Note
 
-Currently only the most recent post will be shown on the front page. The full blog is available through our [blog page](http://ui-datascience.github.io/blog).
+Currently only the most recent post will be shown on the front page. The full blog is available through our [blog page](http://ui-datascience.github.io/blog). In order for your blog post to show up in the right place, you'll have to name the file as this one is named and update the header:
+
+* `layout`: don't change this and make sure it reads **post**
+* `title`: Name your post!
+* `date`: follows a very strict convention. Make sure the time isn't in the future or you may experience frustration at your post not showing up.
+* `categories`: Make sure **post** is somewhere in there. In the future we may wish to organize blogs by category, but for now don't worry about this (expect that it reads **post**. 
 
 -Andrew Mehrmann (github: @dkmehrmann)
