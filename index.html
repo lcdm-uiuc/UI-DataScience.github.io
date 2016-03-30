@@ -7,7 +7,8 @@ layout: index_layout
   <h1 class='page-header'>Recent News</h1>
 
   <div class='well'>
-    <ul class="post-list">
+
+    <ul style='padding-left:0;'>
       {% for post in site.categories.post limit:1 %}
         
         
@@ -23,9 +24,8 @@ layout: index_layout
       
       {% endfor %}
     </ul>
-  <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-  </div>
 
+</div>
   
 
   {% include custom_about.html %}
