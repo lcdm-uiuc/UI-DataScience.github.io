@@ -6,8 +6,8 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 29 Mar 2016 19:56:13 -0500</pubDate>
-    <lastBuildDate>Tue, 29 Mar 2016 19:56:13 -0500</lastBuildDate>
+    <pubDate>Tue, 29 Mar 2016 20:23:22 -0500</pubDate>
+    <lastBuildDate>Tue, 29 Mar 2016 20:23:22 -0500</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
@@ -154,52 +154,6 @@
       </item>
     
       <item>
-        <title>My Project Title</title>
-        <description>&lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;/h2&gt;
-
-&lt;p&gt;Hello, World! This is the first example project post! In this section you may wish to include the “abstract” of your project, which is a short description that covers the motivation, proposed methods, and perhaps initial findings.&lt;/p&gt;
-
-&lt;h2 id=&quot;people&quot;&gt;People&lt;/h2&gt;
-
-&lt;p&gt;This section should be similar to the would-be authors of whatever paper you might write. Example:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Professor Robert J. Brunner, Department of Astronomy&lt;/li&gt;
-  &lt;li&gt;Andrew Mehrmann, Department of Statistics&lt;/li&gt;
-  &lt;li&gt;Another Student, Department of Underwater Basket Weaving&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
-
-&lt;p&gt;This section should include the papers or software your project is based on. It also may be a good place to keep track of this kind of thing.&lt;/p&gt;
-
-&lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
-
-&lt;p&gt;You might want to link to your github repository or specific project folder. It would be a good idea to have a README.md in there to welcome curious visitors.&lt;/p&gt;
-
-&lt;h2 id=&quot;notes-on-creating-a-post&quot;&gt;Notes on Creating a Post&lt;/h2&gt;
-
-&lt;p&gt;You have to follow the naming convention of this post &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;date&amp;gt;&amp;lt;your-title&amp;gt;.markdown&lt;/code&gt;. This file must be in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. You also have to make sure the header is formatted correctly:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;layout&lt;/code&gt;: don’t change this, it should read &lt;strong&gt;post&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;title&lt;/code&gt;: Title of your project&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;date&lt;/code&gt;: follow the convention, and be very exact. Also make sure the date/time isn’t in the future (remember DST!)&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;categories&lt;/code&gt;: must read &lt;em&gt;project&lt;/em&gt;. This is how Jekyll knows where to put which posts.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;-Andrew Mehrmann (github: @dkmehrmann)&lt;/p&gt;
-</description>
-        <pubDate>Sat, 19 Mar 2016 11:25:00 -0500</pubDate>
-        <link>http://yourdomain.com/project/2016/03/19/initial-project.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/project/2016/03/19/initial-project.html</guid>
-        
-        
-        <category>project</category>
-        
-      </item>
-    
-      <item>
         <title>Hello World!</title>
         <description>&lt;p&gt;Hello, World! This is the first post from the UI-Data Science Blog/News feed. All the members of our group will be able to create markdown files to share their ideas and accomplishments with the outside world. This blog is run with &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; and the site is hosted by &lt;a href=&quot;https://pages.github.com/&quot;&gt;Github Pages&lt;/a&gt;. The past few weeks have been very humbling as I’ve tried to get this site and blog off the ground. Finally this hacking endeavor has resulted in this semi-functional tool that I hope our group will use for years to come. Lets take a quick tour of Jekyll’s (and markdown’s) features.&lt;/p&gt;
 
@@ -237,32 +191,6 @@
         <pubDate>Sun, 28 Feb 2016 22:01:00 -0600</pubDate>
         <link>http://yourdomain.com/post/2016/02/28/Hello-World.html</link>
         <guid isPermaLink="true">http://yourdomain.com/post/2016/02/28/Hello-World.html</guid>
-        
-        
-        <category>post</category>
-        
-      </item>
-    
-      <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
-
-&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
-
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;Tom&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &#39;Hi, Tom&#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
-
-</description>
-        <pubDate>Sun, 28 Feb 2016 16:20:56 -0600</pubDate>
-        <link>http://yourdomain.com/post/2016/02/28/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/post/2016/02/28/welcome-to-jekyll.html</guid>
         
         
         <category>post</category>
