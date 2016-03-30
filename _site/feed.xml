@@ -6,9 +6,152 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 19 Mar 2016 15:11:22 -0500</pubDate>
-    <lastBuildDate>Sat, 19 Mar 2016 15:11:22 -0500</lastBuildDate>
+    <pubDate>Tue, 29 Mar 2016 19:56:13 -0500</pubDate>
+    <lastBuildDate>Tue, 29 Mar 2016 19:56:13 -0500</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>Graph Database</title>
+        <description>&lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;/h2&gt;
+
+&lt;p&gt;A graph database is a database that uses graph structures for semantic queries with nodes, edges and properties to represent and store data. In graph database, edges and nodes can be modified flexibly. In other words, it depends less on a rigid schema and new properties can be added in without changing all the other existing data. This project is trying to examine what situations graph database can be applied to and what are the limitations of graph database.&lt;/p&gt;
+
+&lt;h2 id=&quot;people&quot;&gt;People&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Professor Robert J. Brunner, Department of Astronomy&lt;/li&gt;
+  &lt;li&gt;Guanheng Luo, Department of Computer Science&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;neo4j&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 28 Mar 2016 13:25:00 -0500</pubDate>
+        <link>http://yourdomain.com/project/2016/03/28/Graph-Database.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/project/2016/03/28/Graph-Database.html</guid>
+        
+        
+        <category>project</category>
+        
+      </item>
+    
+      <item>
+        <title>Isolation Forest</title>
+        <description>&lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;/h2&gt;
+
+&lt;p&gt;Isolation Forest is a new machine learning algorithm similar in structure to Random Forest, but with a different, yet straightforward method. Instead of clustering normal instances in the data set, Isolation Forest primarily concerns itselfs with predicting the outliers by finding the data that branches out the quickest from the decision trees. This project intends to explore this algorithm further to find any interesting properties that could make predicting simpler, quicker, or more accurate. If we find any of these properties, it could garner more interest to this method and possibly be implemented to certain real world applications.&lt;/p&gt;
+
+&lt;h2 id=&quot;people&quot;&gt;People&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Professor Robert J. Brunner, Department of Astronomy&lt;/li&gt;
+  &lt;li&gt;Will Biscarri, Department of Statistics&lt;/li&gt;
+  &lt;li&gt;Brian Griffin, Department of Statistics&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/icdm08b.pdf&quot;&gt;Isolation Forest&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://scikit-learn.org/dev/modules/generated/sklearn.ensemble.IsolationForest.html&quot;&gt;Scikit-Learn&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Python&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Sat, 26 Mar 2016 15:25:00 -0500</pubDate>
+        <link>http://yourdomain.com/project/2016/03/26/Isolation-Forest.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/project/2016/03/26/Isolation-Forest.html</guid>
+        
+        
+        <category>project</category>
+        
+      </item>
+    
+      <item>
+        <title>N-gram Reconstruction</title>
+        <description>&lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.clinecenter.illinois.edu/&quot;&gt;Cline Center for Democracy&lt;/a&gt; uses data science to predict when and where social conflicts will happen by gathering news articles around the world and analyze them. However, some of articles are protected under copyright law. So the Cline Center can only distribute their metadata such as n-grams. The purpose of this project is to determine what is the highest possible value for n in n-grams under the condition that people cannot reconstruct the orignical document based on the n-grams data(so we won’t violate the copyright).&lt;/p&gt;
+
+&lt;h4 id=&quot;to-do-list&quot;&gt;To do list&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Grab n-gram data from documents&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Train regression model based on the n-gram data to reconstruct original document&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Test the hypothesis that the value of n for n-gram is allowed to increase when the length of original document increases.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;For what value of n can we reconstruct documents of a given length?&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;people&quot;&gt;People&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Professor Robert J. Brunner, Department of Astronomy&lt;/li&gt;
+  &lt;li&gt;Andrew Mehrmann, Department of Statistics&lt;/li&gt;
+  &lt;li&gt;Kefu Zhu, Department of Statistics&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Python&lt;/li&gt;
+  &lt;li&gt;NLTK&lt;/li&gt;
+  &lt;li&gt;Scikit-learn&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/kfz0131/Statistics/blob/master/N-gram%20Reconstruction%20Project.ipynb&quot;&gt;Github Repository&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 21 Mar 2016 10:44:00 -0500</pubDate>
+        <link>http://yourdomain.com/project/2016/03/21/Kefu-Project.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/project/2016/03/21/Kefu-Project.html</guid>
+        
+        
+        <category>project</category>
+        
+      </item>
+    
+      <item>
+        <title>News Article Geocoding</title>
+        <description>&lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;/h2&gt;
+
+&lt;p&gt;This project aims to improve existing news article geocoding techniques in collaboration with the &lt;a href=&quot;http://www.clinecenter.illinois.edu/&quot;&gt;Cline Center for Democracy&lt;/a&gt;. We also intend to explore the challenges imposed by event-level instead of article-level geocoding and survey existing technologies and implementations.&lt;/p&gt;
+
+&lt;h2 id=&quot;people&quot;&gt;People&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Professor Robert J. Brunner, Department of Astronomy&lt;/li&gt;
+  &lt;li&gt;Andrew Mehrmann, Department of Statistics&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://cliff.mediameter.org/&quot;&gt;CLIFF&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/UI-DataScience/Text-Analytics/tree/master/Geocoding&quot;&gt;Github Repository&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 19 Mar 2016 16:15:00 -0500</pubDate>
+        <link>http://yourdomain.com/project/2016/03/19/Andrew-Project.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/project/2016/03/19/Andrew-Project.html</guid>
+        
+        
+        <category>project</category>
+        
+      </item>
     
       <item>
         <title>My Project Title</title>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+  <title>N-gram Reconstruction</title>
+  <meta name="description" content="Abstract">
+
+  <link rel="stylesheet" href="/css/cerulean.css">
+  <link rel="canonical" href="http://yourdomain.com/project/2016/03/21/Kefu-Project.html">
+  <link rel="alternate" type="application/rss+xml" title="UI-DataScience" href="http://yourdomain.com/feed.xml">
+</head>
+
+  <body>
+
+      <!-- NAVBAR -->
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid" >
+
+        <ul class="nav navbar-nav", style='font-size:120%'>
+          <li>
+          <a href="/index", id="sblink">Home</a>
+          </li>
+          <li>
+          <a href="/people", id="sblink">People</a>
+          <li>
+          <a href="/teaching", id="sblink">Teaching</a>
+          </li>
+          <li>
+          <a href="/news", id="sblink">News</a>
+          </li>
+          <li>
+          <a href="/projects", id="sblink">Projects</a>
+          </li>
+          <li>
+          <a href="/code", id="sblink">Code</a>
+          </li>
+      </ul>
+    
+  </div>
+</nav>
+
+
+    
+
+	  <div style="margin: 20px; margin-top:70px;">
+
+	        <h1 class="page-header">N-gram Reconstruction</h1>
+<p class="post-meta"><time datetime="2016-03-21T10:44:00-05:00" itemprop="datePublished">Mar 21, 2016</time></p>
+
+
+<h2 id="abstract">Abstract</h2>
+
+<p><a href="http://www.clinecenter.illinois.edu/">Cline Center for Democracy</a> uses data science to predict when and where social conflicts will happen by gathering news articles around the world and analyze them. However, some of articles are protected under copyright law. So the Cline Center can only distribute their metadata such as n-grams. The purpose of this project is to determine what is the highest possible value for n in n-grams under the condition that people cannot reconstruct the orignical document based on the n-grams data(so we won’t violate the copyright).</p>
+
+<h4 id="to-do-list">To do list</h4>
+
+<ol>
+  <li>
+    <p>Grab n-gram data from documents</p>
+  </li>
+  <li>
+    <p>Train regression model based on the n-gram data to reconstruct original document</p>
+  </li>
+  <li>
+    <p>Test the hypothesis that the value of n for n-gram is allowed to increase when the length of original document increases.</p>
+  </li>
+  <li>
+    <p>For what value of n can we reconstruct documents of a given length?</p>
+  </li>
+</ol>
+
+<h2 id="people">People</h2>
+
+<ul>
+  <li>Professor Robert J. Brunner, Department of Astronomy</li>
+  <li>Andrew Mehrmann, Department of Statistics</li>
+  <li>Kefu Zhu, Department of Statistics</li>
+</ul>
+
+<h2 id="references">References</h2>
+
+<ul>
+  <li>Python</li>
+  <li>NLTK</li>
+  <li>Scikit-learn</li>
+</ul>
+
+<h2 id="code">Code</h2>
+
+<p><a href="https://github.com/kfz0131/Statistics/blob/master/N-gram%20Reconstruction%20Project.ipynb">Github Repository</a></p>
+
+
+	        
+	  </div>
+
+
+    <!-- FOOTER  -->
+
+<div class='well' style='margin-top:50px;'>
+<p align='center' style='font-size:120%;'>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+<p align='center' style='font-size:120%'>Copyright (c) 2009-2016 University of Illinois<br>All rights reserved.</p>
+</div>
+
+
+  </body>
+
+</html>
