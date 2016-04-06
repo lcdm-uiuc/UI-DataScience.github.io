@@ -2,13 +2,161 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>UI-DataScience</title>
-    <description>We began as the Laboratory for Cosomological Data Mining  and have grown to include more than 20 graduate and undergraduate  student researchers from a variety of disciplines including  Statistics, Computer Science, Physics, and Astronomy.
+    <description>The Laboratory for Cosmological Data Mining was founded in 2002 at the University of Illinois by Professor Robert J. Brunner to develop and apply computational technologies to extract cosmological information from the large astrophysical data sets being generated within our community.  LCDM has been one of the top twenty users worldwide of the production supercomputing resources at the National Center for supercomputing  Applications.
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 29 Mar 2016 20:41:42 -0500</pubDate>
-    <lastBuildDate>Tue, 29 Mar 2016 20:41:42 -0500</lastBuildDate>
+    <pubDate>Wed, 06 Apr 2016 13:42:28 -0500</pubDate>
+    <lastBuildDate>Wed, 06 Apr 2016 13:42:28 -0500</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>Felxible Ontologies</title>
+        <description>&lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;/h2&gt;
+
+&lt;p&gt;This project will focus on building very felxible and adaptable ontologies and taxonomy. In the course of the project, many applications of such ontologies will be explored, such as genere classification and sentiment analysis.&lt;/p&gt;
+
+&lt;h2 id=&quot;people&quot;&gt;People&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Professor Robert J. Brunner, Department of Astronomy&lt;/li&gt;
+  &lt;li&gt;Tyler Kim, Department of Computer Science and Department of Statistics&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Scikit Learn&lt;/li&gt;
+  &lt;li&gt;NLTK&lt;/li&gt;
+  &lt;li&gt;Python Libraries&lt;/li&gt;
+  &lt;li&gt;NYT API&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;relevant-papers&quot;&gt;Relevant Papers&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;arxiv.org/abs/1503.00759&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
+
+&lt;p&gt;Not Yet Available&lt;/p&gt;
+</description>
+        <pubDate>Thu, 31 Mar 2016 08:14:00 -0500</pubDate>
+        <link>http://yourdomain.com/project/2016/03/31/Tyler-NLP-Ontologies.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/project/2016/03/31/Tyler-NLP-Ontologies.html</guid>
+        
+        
+        <category>project</category>
+        
+      </item>
+    
+      <item>
+        <title>Deep Learning On Time Series Data</title>
+        <description>&lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;/h2&gt;
+
+&lt;p&gt;This project will focus on the applications of deep machine learning on time series data from the Catalina Sky Survey Telescope. 
+This project will focus on the development of algorithms that will classify time series data in an efficient and accurate way, with minimal manual intervention.&lt;/p&gt;
+
+&lt;h2 id=&quot;people&quot;&gt;People&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Professor Robert J. Brunner, Department of Astronomy&lt;/li&gt;
+  &lt;li&gt;Sushma Adari, Department of Astronomy and Department of Computer Science&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Scikit Learn&lt;/li&gt;
+  &lt;li&gt;Lasagne&lt;/li&gt;
+  &lt;li&gt;Python Libraries&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;relevant-papers&quot;&gt;Relevant Papers&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;arxiv.org/pdf/1101.1959v1.pdf&lt;/li&gt;
+  &lt;li&gt;arxiv.org/ftp/arxiv/papers/1209/1209.1681.pdf&lt;/li&gt;
+  &lt;li&gt;arxiv.org/pdf/1512.01611v1.pdf&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
+
+&lt;p&gt;Not Yet Available&lt;/p&gt;
+</description>
+        <pubDate>Thu, 31 Mar 2016 08:14:00 -0500</pubDate>
+        <link>http://yourdomain.com/project/2016/03/31/Sushma-DeepLearning-TimeSeries.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/project/2016/03/31/Sushma-DeepLearning-TimeSeries.html</guid>
+        
+        
+        <category>project</category>
+        
+      </item>
+    
+      <item>
+        <title>Energy Analytics</title>
+        <description>&lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;/h2&gt;
+
+&lt;p&gt;This project uses data from the Irish Social Science Data Archive(ISSDA), specifically data from the Commision for Energy Regulation(CER). CER is the regulator for the electricity and natural gas sectors in Ireland. Its aim is to create a single European electricity market that best meets the needs of Europe’s energy consumers. The CER Smart Metering Project was initiated in 2007 with the purpose of undertaking trials to assess the performance of Smart Meters, their impact on consumers’ energy consumption and the economic case for a wider national rollout. The data is currently being analyzed for clusters and a specific matter for research is being developed.&lt;/p&gt;
+
+&lt;h2 id=&quot;people&quot;&gt;People&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Professor Robert J. Brunner, Department of Astronomy&lt;/li&gt;
+  &lt;li&gt;Preska Sharma, Department of Statistics and Computer Science&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Python&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 29 Mar 2016 10:07:00 -0500</pubDate>
+        <link>http://yourdomain.com/project/2016/03/29/Energy-Analytics.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/project/2016/03/29/Energy-Analytics.html</guid>
+        
+        
+        <category>project</category>
+        
+      </item>
+    
+      <item>
+        <title>Hathi Trust</title>
+        <description>&lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;/h2&gt;
+
+&lt;p&gt;HathiTrust is a partnership where research institutions and libraries work together to ensure that
+records and files are preserved and accessible long into the future. The HathiTrust Research Center (HTRC)
+and the HathiTrust Digital Library help meet the challenges of managing massive amounts of digital information
+researchers face by developing software tools to enable advanced computational access to the growing records
+of human knowledge. HTRC provides a secure computational and data environment for students to perform research
+using the HathiTrust Digital Library, and the center also allows scholars to fully utilize the content in the
+HathiTrust Library while preventing intellectual property misuse within the limits of U.S. copyright law.&lt;/p&gt;
+
+&lt;p&gt;The focus of this project is to gain a better understanding of how HathiTrust works, and to examine the significance
+of information provided in Hathi’s extracted features.&lt;/p&gt;
+
+&lt;h2 id=&quot;people&quot;&gt;People&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Professor Robert J. Brunner, Department of Astronomy&lt;/li&gt;
+  &lt;li&gt;Andrew Mehrmann, Department of Statistics&lt;/li&gt;
+  &lt;li&gt;Ivy Lei, Department of Statistics and Computer Science&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;p&gt;TBA&lt;/p&gt;
+
+&lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
+
+&lt;p&gt;TBA&lt;/p&gt;
+</description>
+        <pubDate>Tue, 29 Mar 2016 00:00:00 -0500</pubDate>
+        <link>http://yourdomain.com/project/2016/03/29/Hathi-Trust.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/project/2016/03/29/Hathi-Trust.html</guid>
+        
+        
+        <category>project</category>
+        
+      </item>
     
       <item>
         <title>Graph Database</title>

@@ -4,9 +4,9 @@ layout: index_layout
 
 <div class="home" style='margin:20px'>
 
-  <h1 class='page-header'>Recent News</h1>
+  {% include custom_about.html %}
 
-  <div class='well'>
+  <h1 class='page-header'>Recent News</h1>
 
     <ul style='padding-left:0;'>
       {% for post in site.categories.post limit:1 %}
@@ -24,10 +24,4 @@ layout: index_layout
       
       {% endfor %}
     </ul>
-
-</div>
-  
-
-  {% include custom_about.html %}
-
 </div>

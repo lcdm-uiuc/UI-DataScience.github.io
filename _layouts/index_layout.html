@@ -2,12 +2,15 @@
 <html>
 
   {% include custom_head.html %}
+      {% include custom_navbar.html %}
+
+    {% include custom_header.html %}
+
+   <div style="max-width: 900px;  margin-left:  auto;  margin-right: auto; padding-left:2%; padding-right: 2%;">
 
   <body>
 
-    {% include custom_navbar.html %}
 
-    {% include custom_header.html %}
     
 
 	  <div style="margin:20px;">
@@ -17,8 +20,10 @@
 	  </div>
 
 
-    {% include custom_footer.html %}
+    
 
   </body>
 
+  </div>
+{% include custom_footer.html %}
 </html>

@@ -8,11 +8,7 @@
 # Site settings
 title: UI-DataScience
 email: 
-description: > # this means to ignore newlines until "baseurl:"
-  We began as the Laboratory for Cosomological Data Mining 
-  and have grown to include more than 20 graduate and undergraduate 
-  student researchers from a variety of disciplines including 
-  Statistics, Computer Science, Physics, and Astronomy.
+description: 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: 
