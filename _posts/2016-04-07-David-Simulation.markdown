@@ -11,7 +11,7 @@ The research uses machine learning algorithms to simulate cosmology formation. B
 ## People
 
 * Professor Robert J. Brunner, Department of Astronomy 
-* Zheyuan Gu, Department of Physics
+* Zheyuan (David) Gu, Department of Physics
 
 ## References
 
