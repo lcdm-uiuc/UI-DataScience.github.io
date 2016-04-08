@@ -2,26 +2,17 @@
 <html>
 
   {% include custom_head.html %}
+  {% include custom_navbar.html %}
 
-   <div style="max-width: 900px;  margin-left:  auto;  margin-right: auto; padding-left:2%; padding-right: 2%;">
+  <div style="max-width: 900px;  margin-left: auto;  margin-right: auto; padding-left:2%; padding-right: 2%; font-size:120%;">
 
-  <body>
+    <body>
+  	  <div style="margin: 20px; margin-top:70px;">
 
-    {% include custom_navbar.html %}
-
-
-    
-
-	  <div style="margin: 20px; margin-top:70px;">
-
-	        {{ content }}
-	        
-	  </div>
-
-
-    
-
-  </body>
+  	        {{ content }}
+  	        
+  	  </div>
+    </body>
   </div>
   {% include custom_footer.html %}
 
