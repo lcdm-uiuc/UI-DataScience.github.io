@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+  <title>Efficient Storage of Photo-Z PDFs</title>
+  <meta name="description" content="Sparse Representation of Photometric Redshift PDFs: Preparing for Petascale Astronomy">
+
+  <link rel="stylesheet" href="/css/spacelab.css">
+  <link rel="stylesheet" href="/css/syntax.css">
+  <link rel="canonical" href="http://yourdomain.com/papers/2014/04/12/pdfZstorage.html">
+  <link rel="alternate" type="application/rss+xml" title="UI-DataScience" href="http://yourdomain.com/feed.xml">
+</head>
+    <!-- NAVBAR -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/index">Home</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        
+          
+          <li><a class="page-link" href="/code/">Code</a></li>
+          
+        
+          
+          <li><a class="page-link" href="/data/">Data</a></li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <li><a class="page-link" href="/news/">News</a></li>
+          
+        
+          
+          <li><a class="page-link" href="/papers/">Papers</a></li>
+          
+        
+          
+          <li><a class="page-link" href="/people/">People</a></li>
+          
+        
+          
+          <li><a class="page-link" href="/projects/">Ongoing Projects</a></li>
+          
+        
+          
+          <li><a class="page-link" href="/teaching/">Teaching</a></li>
+          
+        
+<!--         <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li> -->
+      </ul>
+      <!-- <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+      </ul> -->
+    </div>
+  </div>
+</nav>
+
+
+
+
+  <div style="max-width: 900px;  margin-left: auto;  margin-right: auto; padding-left:2%; padding-right: 2%; font-size:120%;">
+
+    <body>
+  	  <div style="margin: 20px; margin-top:70px;">
+
+  	        <!-- TO GET LATEX TO WORK RIGHT -->
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$', '$']],
+        displayMath: [ ['$$', '$$']],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+      //,
+      //displayAlign: "left",
+      //displayIndent: "2em"
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+
+
+
+<div style="margin:20px;">
+
+<h1 class="page-header">Efficient Storage of Photo-Z PDFs</h1>
+<p class="post-meta"><time datetime="2014-04-12T00:00:00-05:00" itemprop="datePublished">Apr 12, 2014</time></p>
+
+<h3 id="sparse-representation-of-photometric-redshift-pdfs-preparing-for-petascale-astronomy">Sparse Representation of Photometric Redshift PDFs: Preparing for Petascale Astronomy</h3>
+
+<p><strong>Authors</strong>: Matias Carrasco Kind and Robert J. Brunner<br />
+<strong>Published</strong>:   TBD<br />
+<strong>DOI</strong>: N/A</p>
+
+<h3 id="access">Access:</h3>
+<p><a href="">MNRAS Journal Article</a><br />
+<a href="">NASA ADS Record</a><br />
+<a href="http://arxiv.org/abs/1404.6442">arXiv Posting</a><br />
+<a href="/static/papers/pdf_storage_final.pdf">LCDM Repository</a></p>
+
+<h3 id="abstract">Abstract:</h3>
+
+<p>One of the consequences of entering the era of precision cosmology is
+the widespread adoption of photometric redshift probability density
+functions (PDFs), which provide additional information over simple
+photometric redshift estimates. Both current and future photometric
+surveys are expected to obtain images of billions or more distinct
+galaxies. As a result, storing and analyzing all of these photometric
+redshift PDFs will be non- trivial; a result that is even more severe if
+a survey decides to compute and store multiple di↵erent PDFs. In this
+paper we explore this problem and propose the use of a sparse basis
+representation to fully represent individual photo-z PDFs. For large
+galaxy samples, we achieve an accuracy of 99.8% while reducing the
+number of points required to represent a galaxy photometric redshift PDF
+by an order of magnitude. By using an Orthogonal Matching Pursuit
+algorithm and a combination of Gaussian and Voigt bases functions, we
+demonstrate how our approach is superior to the a multi-Gaussian fitting
+approach, as we require approximately half of the parameters for the
+same fitting accuracy with the additional advantage that an entire PDF
+can be stored by using a single four byte integer per basis function. By
+using data from the CFTHLens survey, we demonstrate that only ten to
+twenty points per galaxy are suffcient to reconstruct both the individual
+PDF and the ensemble redshift distribution, N(z), to an accuracy of
+99.9% when compared to the one built using the original photo-z PDFs
+computed with a resolution of ffz = 0.01. Thus, in this example we reduce
+the required storage from two hundred photo-z PDF values as originally
+computed by a factor of ten to twenty. As a result, our proposed
+approach will allow current and future surveys to easily manage and
+store billions of PDFs and to also enable these same surveys to archive
+multiple photo-z PDFs computed by di↵erent techniques. Finally, we
+demonstrate how this functional basis representation can be directly
+extended to a cosmological analysis, thereby increasing computational
+performance without losing resolution or accuracy.</p>
+
+<h3 id="implementation">Implementation</h3>
+
+<p>The most recent implementation of the algorithm is not yet available,
+but is planned for the next release of the MLZ package.</p>
+
+<h3 id="contact">Contact:</h3>
+
+<p>If you have any questions about the method or the code, please contact
+the authors.</p>
+
+
+</div>
+  	        
+  	  </div>
+    </body>
+  </div>
+  <!-- FOOTER  -->
+
+<div class='well' style='margin-top:50px; margin-bottom:0;'>
+<p align='center' style='font-size:120%;'>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+<p align='center' style='font-size:120%'>Copyright (c) 2009-2016 University of Illinois<br>All rights reserved.</p>
+</div>
+
+
+</html>

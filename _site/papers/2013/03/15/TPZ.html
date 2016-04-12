@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+  <title>TPZ: Trees for Photo-Z</title>
+  <meta name="description" content="TPZ: photometric redshift PDFs and ancillary information by using prediction trees and random forests">
+
+  <link rel="stylesheet" href="/css/spacelab.css">
+  <link rel="stylesheet" href="/css/syntax.css">
+  <link rel="canonical" href="http://yourdomain.com/papers/2013/03/15/TPZ.html">
+  <link rel="alternate" type="application/rss+xml" title="UI-DataScience" href="http://yourdomain.com/feed.xml">
+</head>
+    <!-- NAVBAR -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/index">Home</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        
+          
+          <li><a class="page-link" href="/code/">Code</a></li>
+          
+        
+          
+          <li><a class="page-link" href="/data/">Data</a></li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <li><a class="page-link" href="/news/">News</a></li>
+          
+        
+          
+          <li><a class="page-link" href="/papers/">Papers</a></li>
+          
+        
+          
+          <li><a class="page-link" href="/people/">People</a></li>
+          
+        
+          
+          <li><a class="page-link" href="/projects/">Ongoing Projects</a></li>
+          
+        
+          
+          <li><a class="page-link" href="/teaching/">Teaching</a></li>
+          
+        
+<!--         <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li> -->
+      </ul>
+      <!-- <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+      </ul> -->
+    </div>
+  </div>
+</nav>
+
+
+
+
+  <div style="max-width: 900px;  margin-left: auto;  margin-right: auto; padding-left:2%; padding-right: 2%; font-size:120%;">
+
+    <body>
+  	  <div style="margin: 20px; margin-top:70px;">
+
+  	        <!-- TO GET LATEX TO WORK RIGHT -->
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$', '$']],
+        displayMath: [ ['$$', '$$']],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+      //,
+      //displayAlign: "left",
+      //displayIndent: "2em"
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+
+
+
+<div style="margin:20px;">
+
+<h1 class="page-header">TPZ: Trees for Photo-Z</h1>
+<p class="post-meta"><time datetime="2013-03-15T00:00:00-05:00" itemprop="datePublished">Mar 15, 2013</time></p>
+
+<h3 id="tpz-photometric-redshift-pdfs-and-ancillary-information-by-using-prediction-trees-and-random-forests">TPZ: photometric redshift PDFs and ancillary information by using prediction trees and random forests</h3>
+
+<p><strong>Authors</strong>: Matias Carrasco Kind and Robert J. Brunner<br />
+<strong>Published</strong>:   June 21, 2013<br />
+<strong>DOI</strong>: 10.1093/mnras/stt574</p>
+
+<h3 id="access">Access:</h3>
+<p><a href="http://mnras.oxfordjournals.org/content/432/2/1483">MNRAS Journal Article</a><br />
+<a href="http://adsabs.harvard.edu/cgi-bin/bib_query?arXiv:1303.7269">NASA ADS Record</a><br />
+<a href="http://arxiv.org/abs/1303.7269">arXiv Posting</a><br />
+<a href="/static/papers/tpz.pdf">LCDM Repository</a></p>
+
+<h3 id="abstract">Abstract:</h3>
+<p>With the growth of large photometric surveys, accurately estimating
+photometric redshifts, preferably as a probability density function
+(PDF), and fully understanding the implicit systematic uncertainties in
+this process, has become increasingly important. In this paper, we
+present a new, publicly available, parallel, machine learning algorithm
+that generates photometric redshift PDFs by using prediction trees and
+random forest techniques, which we have named TPZ. This new algorithm
+incorporates measurement errors into the calculation while also dealing
+efficiently with missing values in the data. In addition, our
+implementation of this algorithm provides supplementary information
+regarding the data being analysed, including unbiased estimates of the
+accuracy of the technique without resorting to a validation data set,
+identification of poor photometric redshift areas within the parameter
+space occupied by the spectroscopic training data, a quantification of
+the relative importance of the variables used to construct the PDF, and
+a robust identification of outliers. This extra information can be used
+to optimally target new spectroscopic observations and to improve the
+overall efficacy of the redshift estimation. We have tested TPZ on
+galaxy samples drawn from the Sloan Digital Sky Survey (SDSS) main
+galaxy sample and from the Deep Extragalactic Evolutionary Probe-2
+(DEEP2) survey, obtaining excellent results in each case. We also have
+tested our implementation by participating in the PHAT1 project, which
+is a blind photometric redshift contest, finding that TPZ performs
+comparable to if not better than other empirical photometric redshift
+algorithms. Finally, we discuss the various parameters that control the
+operation of TPZ, the specific limitations of this approach and an
+application of photometric redshift PDFs.</p>
+
+<h3 id="implementation">Implementation</h3>
+
+<p>The most recent implementation of the TPZ algorithm is now included in
+the Machine Learning for Photometric Redshift (MLZ) code. Both the <a href="/static/code/MLZ/MLZ-1.0.tar.gz">MLZ
+code</a> and the <a href="/static/code/mlz/MLZ-1.0/doc/html/index.html">MLZ
+Manual</a> are freely available.</p>
+
+<p>The original version of the TPZ code is only available upon request.</p>
+
+<h3 id="contact">Contact:</h3>
+
+<p>If you have any questions about the method or the code, please contact
+the authors.</p>
+
+
+</div>
+  	        
+  	  </div>
+    </body>
+  </div>
+  <!-- FOOTER  -->
+
+<div class='well' style='margin-top:50px; margin-bottom:0;'>
+<p align='center' style='font-size:120%;'>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+<p align='center' style='font-size:120%'>Copyright (c) 2009-2016 University of Illinois<br>All rights reserved.</p>
+</div>
+
+
+</html>

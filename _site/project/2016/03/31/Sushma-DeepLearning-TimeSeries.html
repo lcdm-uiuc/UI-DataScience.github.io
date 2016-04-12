@@ -32,7 +32,11 @@
       <ul class="nav navbar-nav">
         
           
-          <li><a class="page-link" href="/code">Research</a></li>
+          <li><a class="page-link" href="/code/">Code</a></li>
+          
+        
+          
+          <li><a class="page-link" href="/data/">Data</a></li>
           
         
           
@@ -42,15 +46,19 @@
           
         
           
-          <li><a class="page-link" href="/news">News</a></li>
+          <li><a class="page-link" href="/news/">News</a></li>
           
         
           
-          <li><a class="page-link" href="/people">People</a></li>
+          <li><a class="page-link" href="/papers/">Papers</a></li>
           
         
           
-          <li><a class="page-link" href="/projects">Ongoing Projects</a></li>
+          <li><a class="page-link" href="/people/">People</a></li>
+          
+        
+          
+          <li><a class="page-link" href="/projects/">Ongoing Projects</a></li>
           
         
           
@@ -85,7 +93,27 @@
     <body>
   	  <div style="margin: 20px; margin-top:70px;">
 
-  	        <div style="margin:20px;">
+  	        <!-- TO GET LATEX TO WORK RIGHT -->
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$', '$']],
+        displayMath: [ ['$$', '$$']],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+      //,
+      //displayAlign: "left",
+      //displayIndent: "2em"
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+
+
+
+<div style="margin:20px;">
 
 <h1 class="page-header">Deep Learning On Time Series Data</h1>
 <p class="post-meta"><time datetime="2016-03-31T08:14:00-05:00" itemprop="datePublished">Mar 31, 2016</time></p>

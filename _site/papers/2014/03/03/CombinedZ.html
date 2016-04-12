@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+  <title>Novel Bayesian Combination of Photo-Z PDFs</title>
+  <meta name="description" content="Exhausting the Information: Novel Bayesian Combination of Photometric Redshift PDFs">
+
+  <link rel="stylesheet" href="/css/spacelab.css">
+  <link rel="stylesheet" href="/css/syntax.css">
+  <link rel="canonical" href="http://yourdomain.com/papers/2014/03/03/CombinedZ.html">
+  <link rel="alternate" type="application/rss+xml" title="UI-DataScience" href="http://yourdomain.com/feed.xml">
+</head>
+    <!-- NAVBAR -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/index">Home</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        
+          
+          <li><a class="page-link" href="/code/">Code</a></li>
+          
+        
+          
+          <li><a class="page-link" href="/data/">Data</a></li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <li><a class="page-link" href="/news/">News</a></li>
+          
+        
+          
+          <li><a class="page-link" href="/papers/">Papers</a></li>
+          
+        
+          
+          <li><a class="page-link" href="/people/">People</a></li>
+          
+        
+          
+          <li><a class="page-link" href="/projects/">Ongoing Projects</a></li>
+          
+        
+          
+          <li><a class="page-link" href="/teaching/">Teaching</a></li>
+          
+        
+<!--         <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li> -->
+      </ul>
+      <!-- <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+      </ul> -->
+    </div>
+  </div>
+</nav>
+
+
+
+
+  <div style="max-width: 900px;  margin-left: auto;  margin-right: auto; padding-left:2%; padding-right: 2%; font-size:120%;">
+
+    <body>
+  	  <div style="margin: 20px; margin-top:70px;">
+
+  	        <!-- TO GET LATEX TO WORK RIGHT -->
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$', '$']],
+        displayMath: [ ['$$', '$$']],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+      //,
+      //displayAlign: "left",
+      //displayIndent: "2em"
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+
+
+
+<div style="margin:20px;">
+
+<h1 class="page-header">Novel Bayesian Combination of Photo-Z PDFs</h1>
+<p class="post-meta"><time datetime="2014-03-03T00:00:00-06:00" itemprop="datePublished">Mar 3, 2014</time></p>
+
+<h3 id="exhausting-the-information-novel-bayesian-combination-of-photometric-redshift-pdfs">Exhausting the Information: Novel Bayesian Combination of Photometric Redshift PDFs</h3>
+
+<p><strong>Authors</strong>: Matias Carrasco Kind and Robert J. Brunner<br />
+<strong>Published</strong>:   TBD<br />
+<strong>DOI</strong>: N/A</p>
+
+<h3 id="access">Access:</h3>
+<p><a href="">MNRAS Journal Article</a><br />
+<a href="">NASA ADS Record</a><br />
+<a href="http://arxiv.org/pdf/1403.0044.pdf">arXiv Posting</a><br />
+<a href="/static/papers/comboz.pdf">LCDM Repository</a></p>
+
+<h3 id="abstract">Abstract:</h3>
+
+<p>The estimation and utilization of photometric redshift probability
+density functions (photo-z PDFs) has become increasingly important over
+the last few years. Primarily this is because of the prominent role
+photo-z PDFs play in enabling photometric survey data to be used to make
+cosmological constraints, especially when compared to single photo-z
+estimates. Currently there exist a wide variety of algorithms to compute
+photo-z ’s, each with their own strengths and weaknesses. In this paper,
+we present a novel and efficient Bayesian framework that combines the
+results from different photo-z techniques into a more powerful and
+robust estimate by maximizing the information from the photometric data.
+To demonstrate this we use a supervised machine learning technique based
+on pre- diction trees and a random forest, an unsupervised method based
+on self organizing maps and a random atlas, and a standard template
+fitting method but can be easily extend to other existing techniques. We
+use data from the DEEP2 survey and more than 106 galaxies from the SDSS
+survey to explore different methods for combining the photo-z
+predictions from these three techniques. In addition, by using different
+performance metrics, we demonstrate that we can improve the accuracy of
+our final photo-z estimate over the best input technique, that the
+fraction of outliers is reduced, and that the identification of outliers
+is significantly improved when we apply a Näıve Bayes Classifier to
+this combined photo-z information. Furthermore, we introduce a new
+approach to explore how different techniques perform across the
+different areas within the information space supported by the
+photometric data. Our more robust and accurate photo-z PDFs will allow
+even more precise cosmological constraints to be made by using current
+and future photometric surveys. These improvements are crucial as we
+move to analyze photometric data that push to or even past the limits of
+the available training data, which will be the case with the Large
+Synoptic Survey Telescope.</p>
+
+<h3 id="implementation">Implementation</h3>
+
+<p>The most recent implementation of the algorithm is not yet available,
+but is planned for the next release of the MLZ package.</p>
+
+<h3 id="contact">Contact:</h3>
+
+<p>If you have any questions about the method or the code, please contact
+the authors.</p>
+
+
+</div>
+  	        
+  	  </div>
+    </body>
+  </div>
+  <!-- FOOTER  -->
+
+<div class='well' style='margin-top:50px; margin-bottom:0;'>
+<p align='center' style='font-size:120%;'>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+<p align='center' style='font-size:120%'>Copyright (c) 2009-2016 University of Illinois<br>All rights reserved.</p>
+</div>
+
+
+</html>

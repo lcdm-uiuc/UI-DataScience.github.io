@@ -5,9 +5,46 @@
     <description></description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 07 Apr 2016 19:28:17 -0500</pubDate>
-    <lastBuildDate>Thu, 07 Apr 2016 19:28:17 -0500</lastBuildDate>
+    <pubDate>Mon, 11 Apr 2016 22:12:15 -0500</pubDate>
+    <lastBuildDate>Mon, 11 Apr 2016 22:12:15 -0500</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>Machine Learning Simulation</title>
+        <description>&lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;/h2&gt;
+
+&lt;p&gt;The research uses machine learning algorithms to simulate cosmology formation. Based on the two papers done earlier, I want to find a new angle to the project and carry it forward.&lt;/p&gt;
+
+&lt;h2 id=&quot;people&quot;&gt;People&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Professor Robert J. Brunner, Department of Astronomy&lt;/li&gt;
+  &lt;li&gt;Zheyuan (David) Gu, Department of Physics&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Scikit-learn (http://scikit-learn.org/stable/documentation.html)&lt;/li&gt;
+  &lt;li&gt;Machine Learning and Cosmological Simulations I: Semi-Analytical Models (http://arxiv.org/abs/1510.06402)&lt;/li&gt;
+  &lt;li&gt;Machine Learning and Cosmological Simulations II: Hydrodynamical Simulations (http://arxiv.org/abs/1510.07659)&lt;/li&gt;
+  &lt;li&gt;A primer on hierarchical galaxy formation: the semi-analytical approach (http://arxiv.org/abs/astro-ph/0610031)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
+
+&lt;p&gt;Not yet available&lt;/p&gt;
+
+&lt;h2 id=&quot;notes-on-creating-a-post&quot;&gt;Notes on Creating a Post&lt;/h2&gt;
+</description>
+        <pubDate>Thu, 07 Apr 2016 20:01:00 -0500</pubDate>
+        <link>http://yourdomain.com/project/2016/04/07/David-Simulation.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/project/2016/04/07/David-Simulation.html</guid>
+        
+        
+        <category>project</category>
+        
+      </item>
     
       <item>
         <title>Felxible Ontologies</title>

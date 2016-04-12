@@ -1,0 +1,369 @@
+---
+layout: post
+title: "SDSS DR7 Galaxy Angular Power Spectra"
+date: 2013-09-06 
+categories: data
+summary: "We are releasing the SDSS DR7 galaxy angular power spectra measurements and corresponding Fisher matrices and window functions."
+---
+
+## Introduction
+
+We are publically releasing the angular power spectra estimates and the
+corresponding Fisher matrices and Window functions first presented in
+[Hayes, Brunner, & Ross 2012](http://adsabs.harvard.edu/abs/2012MNRAS.421.2043H).
+The naming of these files correspond
+to the samples they describe. The naming convention begins with the type
+of data. We provide the angular power spectrum and errors in the files
+prefixed with "C_", the Fisher matrices in the files prefixed with
+"Fisher_", and the window functions in the files prefixed with
+"Window_". Following that is a set of numbers corresponding to the
+minimum and maximum magnitude, minimum and maximum SDSS type parameter,
+minimum and maximum SDSS stripe, HEALPix resolution, and maximum
+multipole moment. So the file "C_18-21_0.0-1.0_9-37_64_200.dat" refers
+to the angular power spectrum of the sample from magnitudes 18-21, types
+0.0-1.0, and stripes 9-37 at resolution 64 and calculated up to the
+multipole moment l=200. None of the data given here have been selected
+by type, so for all the following files the type parameter includes the
+full range of 0.0 to 1.0.
+
+## Data
+
+### Angular Power Spectrum
+
+These files are all formatted as follows: the first column is the
+bandpower numbers, starting at zero; the second column is the midpoint
+of the bandpower; the third column is the starting l of the bandpower;
+the fourth column is the ending l of the bandpower; the fifth column is
+Cl2, the angular power spectrum squared; the sixth column is the error
+of the Cl2, the square root of the diagonal Fisher matrix elements; and
+the seventh column is the fifth column repeated, Cl2.
+
+### Fisher Matrices
+
+These files contain the Fisher matrices associated with the above
+angular power spectra. Each line corresponds to a row of the Fisher
+matrix, and each number in the row corresponds to that column. So the
+F00 element is the zeroth row (first line) and zeroth column (first
+number), while the F01 element is the first line and second number.
+
+### Window Functions
+
+These files contain the window function matrices associated with the
+above angular power spectra. Each line corresponds to a row of the
+window matrix, and each number in the row corresponds to that column. So
+the W00 element is the zeroth row (first line) and zeroth column (first
+number), while the W01 element is the first line and second number.
+
+<table>
+<tbody>
+<tr>
+<th><center>Stripe(s)</center></th>
+<th><center>Magnitude Range</center></th>
+<th><center>Angular Power Spectrum</center></th>
+<th><center>Fisher Matrix</center></th>
+<th><center>Window Matrix</center></th>
+</tr>
+<tr>
+<td><center>9-37</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_9-37_64_200.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_9-37_64_200.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_9-37_64_200.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>9-37</center></td>
+<td><center>18-19</center></td>
+<td><center><a href="/static/data/apsqe/C_18-19_0.0-1.0_9-37_64_200.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-19_0.0-1.0_9-37_64_200.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-19_0.0-1.0_9-37_64_200.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>9-37</center></td>
+<td><center>19-20</center></td>
+<td><center><a href="/static/data/apsqe/C_19-20_0.0-1.0_9-37_64_200.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_19-20_0.0-1.0_9-37_64_200.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_19-20_0.0-1.0_9-37_64_200.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>9-37</center></td>
+<td><center>20-21</center></td>
+<td><center><a href="/static/data/apsqe/C_20-21_0.0-1.0_9-37_64_200.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_20-21_0.0-1.0_9-37_64_200.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_20-21_0.0-1.0_9-37_64_200.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>10</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_10-10_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_10-10_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_10-10_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>10</center></td>
+<td><center>18-19</center></td>
+<td><center><a href="/static/data/apsqe/C_18-19_0.0-1.0_10-10_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-19_0.0-1.0_10-10_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-19_0.0-1.0_10-10_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>10</center></td>
+<td><center>19-20</center></td>
+<td><center><a href="/static/data/apsqe/C_19-20_0.0-1.0_10-10_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_19-20_0.0-1.0_10-10_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_19-20_0.0-1.0_10-10_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>10</center></td>
+<td><center>20-21</center></td>
+<td><center><a href="/static/data/apsqe/C_20-21_0.0-1.0_10-10_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_20-21_0.0-1.0_10-10_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_20-21_0.0-1.0_10-10_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><center>10</center></td>
+<td><center>18.2-19.2</center></td>
+<td><center><a href="/static/data/apsqe/C_18.2-19.2_0.0-1.0_10-10_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18.2-19.2_0.0-1.0_10-10_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18.2-19.2_0.0-1.0_10-10_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>10</center></td>
+<td><center>19.2-20.2</center></td>
+<td><center><a href="/static/data/apsqe/C_19.2-20.2_0.0-1.0_10-10_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_19.2-20.2_0.0-1.0_10-10_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_19.2-20.2_0.0-1.0_10-10_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>10</center></td>
+<td><center>20.2-21.2</center></td>
+<td><center><a href="/static/data/apsqe/C_20.2-21.2_0.0-1.0_10-10_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_20.2-21.2_0.0-1.0_10-10_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_20.2-21.2_0.0-1.0_10-10_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><center>9</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_9-9_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_9-9_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_9-9_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>10</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_10-10_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_10-10_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_10-10_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>11</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_11-11_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_11-11_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_11-11_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>12</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_12-12_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_12-12_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_12-12_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>13</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_13-13_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_13-13_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_13-13_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>14</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_14-14_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_14-14_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_14-14_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>15</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_15-15_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_15-15_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_15-15_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>16</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_16-16_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_16-16_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_16-16_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>17</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_17-17_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_17-17_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_17-17_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>18</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_18-18_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_18-18_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_18-18_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>19</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_19-19_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_19-19_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_19-19_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>20</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_20-20_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_20-20_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_20-20_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>21</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_21-21_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_21-21_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_21-21_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>22</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_22-22_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_22-22_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_22-22_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>23</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_23-23_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_23-23_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_23-23_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>24</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_24-24_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_24-24_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_24-24_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>25</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_25-25_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_25-25_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_25-25_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>26</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_26-26_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_26-26_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_26-26_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>27</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_27-27_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_27-27_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_27-27_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>28</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_28-28_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_28-28_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_28-28_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>29</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_29-29_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_29-29_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_29-29_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>30</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_30-30_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_30-30_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_30-30_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>31</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_31-31_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_31-31_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_31-31_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>32</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_32-32_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_32-32_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_32-32_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>33</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_33-33_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_33-33_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_33-33_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>34</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_34-34_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_34-34_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_34-34_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>35</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_35-35_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_35-35_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_35-35_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>36</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_36-36_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_36-36_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_36-36_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>37</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_37-37_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_37-37_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_37-37_256_1000.dat">Window</a></center></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+## Contact:
+
+If you have any questions about these data, please contact Robert
+Brunner at: bigdog AT illinois.edu

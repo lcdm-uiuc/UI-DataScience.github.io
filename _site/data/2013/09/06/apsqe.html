@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+  <title>SDSS DR7 Galaxy Angular Power Spectra</title>
+  <meta name="description" content="Introduction">
+
+  <link rel="stylesheet" href="/css/spacelab.css">
+  <link rel="stylesheet" href="/css/syntax.css">
+  <link rel="canonical" href="http://yourdomain.com/data/2013/09/06/apsqe.html">
+  <link rel="alternate" type="application/rss+xml" title="UI-DataScience" href="http://yourdomain.com/feed.xml">
+</head>
+    <!-- NAVBAR -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/index">Home</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        
+          
+          <li><a class="page-link" href="/code/">Code</a></li>
+          
+        
+          
+          <li><a class="page-link" href="/data/">Data</a></li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <li><a class="page-link" href="/news/">News</a></li>
+          
+        
+          
+          <li><a class="page-link" href="/papers/">Papers</a></li>
+          
+        
+          
+          <li><a class="page-link" href="/people/">People</a></li>
+          
+        
+          
+          <li><a class="page-link" href="/projects/">Ongoing Projects</a></li>
+          
+        
+          
+          <li><a class="page-link" href="/teaching/">Teaching</a></li>
+          
+        
+<!--         <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li> -->
+      </ul>
+      <!-- <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+      </ul> -->
+    </div>
+  </div>
+</nav>
+
+
+
+
+  <div style="max-width: 900px;  margin-left: auto;  margin-right: auto; padding-left:2%; padding-right: 2%; font-size:120%;">
+
+    <body>
+  	  <div style="margin: 20px; margin-top:70px;">
+
+  	        <!-- TO GET LATEX TO WORK RIGHT -->
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$', '$']],
+        displayMath: [ ['$$', '$$']],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+      //,
+      //displayAlign: "left",
+      //displayIndent: "2em"
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+
+
+
+<div style="margin:20px;">
+
+<h1 class="page-header">SDSS DR7 Galaxy Angular Power Spectra</h1>
+<p class="post-meta"><time datetime="2013-09-06T00:00:00-05:00" itemprop="datePublished">Sep 6, 2013</time></p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>We are publically releasing the angular power spectra estimates and the
+corresponding Fisher matrices and Window functions first presented in
+<a href="http://adsabs.harvard.edu/abs/2012MNRAS.421.2043H">Hayes, Brunner, &amp; Ross 2012</a>.
+The naming of these files correspond
+to the samples they describe. The naming convention begins with the type
+of data. We provide the angular power spectrum and errors in the files
+prefixed with “C_”, the Fisher matrices in the files prefixed with
+“Fisher_”, and the window functions in the files prefixed with
+“Window_”. Following that is a set of numbers corresponding to the
+minimum and maximum magnitude, minimum and maximum SDSS type parameter,
+minimum and maximum SDSS stripe, HEALPix resolution, and maximum
+multipole moment. So the file “C_18-21_0.0-1.0_9-37_64_200.dat” refers
+to the angular power spectrum of the sample from magnitudes 18-21, types
+0.0-1.0, and stripes 9-37 at resolution 64 and calculated up to the
+multipole moment l=200. None of the data given here have been selected
+by type, so for all the following files the type parameter includes the
+full range of 0.0 to 1.0.</p>
+
+<h2 id="data">Data</h2>
+
+<h3 id="angular-power-spectrum">Angular Power Spectrum</h3>
+
+<p>These files are all formatted as follows: the first column is the
+bandpower numbers, starting at zero; the second column is the midpoint
+of the bandpower; the third column is the starting l of the bandpower;
+the fourth column is the ending l of the bandpower; the fifth column is
+Cl2, the angular power spectrum squared; the sixth column is the error
+of the Cl2, the square root of the diagonal Fisher matrix elements; and
+the seventh column is the fifth column repeated, Cl2.</p>
+
+<h3 id="fisher-matrices">Fisher Matrices</h3>
+
+<p>These files contain the Fisher matrices associated with the above
+angular power spectra. Each line corresponds to a row of the Fisher
+matrix, and each number in the row corresponds to that column. So the
+F00 element is the zeroth row (first line) and zeroth column (first
+number), while the F01 element is the first line and second number.</p>
+
+<h3 id="window-functions">Window Functions</h3>
+
+<p>These files contain the window function matrices associated with the
+above angular power spectra. Each line corresponds to a row of the
+window matrix, and each number in the row corresponds to that column. So
+the W00 element is the zeroth row (first line) and zeroth column (first
+number), while the W01 element is the first line and second number.</p>
+
+<table>
+<tbody>
+<tr>
+<th><center>Stripe(s)</center></th>
+<th><center>Magnitude Range</center></th>
+<th><center>Angular Power Spectrum</center></th>
+<th><center>Fisher Matrix</center></th>
+<th><center>Window Matrix</center></th>
+</tr>
+<tr>
+<td><center>9-37</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_9-37_64_200.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_9-37_64_200.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_9-37_64_200.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>9-37</center></td>
+<td><center>18-19</center></td>
+<td><center><a href="/static/data/apsqe/C_18-19_0.0-1.0_9-37_64_200.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-19_0.0-1.0_9-37_64_200.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-19_0.0-1.0_9-37_64_200.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>9-37</center></td>
+<td><center>19-20</center></td>
+<td><center><a href="/static/data/apsqe/C_19-20_0.0-1.0_9-37_64_200.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_19-20_0.0-1.0_9-37_64_200.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_19-20_0.0-1.0_9-37_64_200.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>9-37</center></td>
+<td><center>20-21</center></td>
+<td><center><a href="/static/data/apsqe/C_20-21_0.0-1.0_9-37_64_200.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_20-21_0.0-1.0_9-37_64_200.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_20-21_0.0-1.0_9-37_64_200.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>10</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_10-10_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_10-10_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_10-10_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>10</center></td>
+<td><center>18-19</center></td>
+<td><center><a href="/static/data/apsqe/C_18-19_0.0-1.0_10-10_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-19_0.0-1.0_10-10_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-19_0.0-1.0_10-10_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>10</center></td>
+<td><center>19-20</center></td>
+<td><center><a href="/static/data/apsqe/C_19-20_0.0-1.0_10-10_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_19-20_0.0-1.0_10-10_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_19-20_0.0-1.0_10-10_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>10</center></td>
+<td><center>20-21</center></td>
+<td><center><a href="/static/data/apsqe/C_20-21_0.0-1.0_10-10_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_20-21_0.0-1.0_10-10_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_20-21_0.0-1.0_10-10_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><center>10</center></td>
+<td><center>18.2-19.2</center></td>
+<td><center><a href="/static/data/apsqe/C_18.2-19.2_0.0-1.0_10-10_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18.2-19.2_0.0-1.0_10-10_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18.2-19.2_0.0-1.0_10-10_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>10</center></td>
+<td><center>19.2-20.2</center></td>
+<td><center><a href="/static/data/apsqe/C_19.2-20.2_0.0-1.0_10-10_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_19.2-20.2_0.0-1.0_10-10_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_19.2-20.2_0.0-1.0_10-10_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>10</center></td>
+<td><center>20.2-21.2</center></td>
+<td><center><a href="/static/data/apsqe/C_20.2-21.2_0.0-1.0_10-10_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_20.2-21.2_0.0-1.0_10-10_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_20.2-21.2_0.0-1.0_10-10_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><center>9</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_9-9_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_9-9_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_9-9_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>10</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_10-10_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_10-10_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_10-10_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>11</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_11-11_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_11-11_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_11-11_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>12</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_12-12_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_12-12_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_12-12_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>13</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_13-13_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_13-13_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_13-13_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>14</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_14-14_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_14-14_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_14-14_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>15</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_15-15_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_15-15_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_15-15_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>16</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_16-16_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_16-16_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_16-16_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>17</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_17-17_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_17-17_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_17-17_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>18</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_18-18_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_18-18_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_18-18_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>19</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_19-19_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_19-19_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_19-19_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>20</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_20-20_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_20-20_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_20-20_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>21</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_21-21_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_21-21_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_21-21_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>22</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_22-22_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_22-22_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_22-22_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>23</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_23-23_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_23-23_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_23-23_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>24</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_24-24_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_24-24_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_24-24_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>25</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_25-25_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_25-25_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_25-25_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>26</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_26-26_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_26-26_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_26-26_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>27</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_27-27_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_27-27_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_27-27_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>28</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_28-28_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_28-28_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_28-28_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>29</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_29-29_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_29-29_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_29-29_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>30</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_30-30_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_30-30_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_30-30_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>31</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_31-31_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_31-31_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_31-31_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>32</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_32-32_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_32-32_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_32-32_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>33</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_33-33_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_33-33_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_33-33_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>34</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_34-34_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_34-34_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_34-34_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>35</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_35-35_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_35-35_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_35-35_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>36</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_36-36_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_36-36_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_36-36_256_1000.dat">Window</a></center></td>
+</tr>
+<tr>
+<td><center>37</center></td>
+<td><center>18-21</center></td>
+<td><center><a href="/static/data/apsqe/C_18-21_0.0-1.0_37-37_256_1000.dat">APS</a></center></td>
+<td><center><a href="/static/data/apsqe/Fisher_18-21_0.0-1.0_37-37_256_1000.dat">Fisher</a></center></td>
+<td><center><a href="/static/data/apsqe/Window_18-21_0.0-1.0_37-37_256_1000.dat">Window</a></center></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="contact">Contact:</h2>
+
+<p>If you have any questions about these data, please contact Robert
+Brunner at: bigdog AT illinois.edu</p>
+
+
+</div>
+  	        
+  	  </div>
+    </body>
+  </div>
+  <!-- FOOTER  -->
+
+<div class='well' style='margin-top:50px; margin-bottom:0;'>
+<p align='center' style='font-size:120%;'>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+<p align='center' style='font-size:120%'>Copyright (c) 2009-2016 University of Illinois<br>All rights reserved.</p>
+</div>
+
+
+</html>

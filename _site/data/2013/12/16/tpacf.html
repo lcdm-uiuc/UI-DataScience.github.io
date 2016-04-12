@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+  <title>SDSS DR7 Galaxy Correlation Function Data</title>
+  <meta name="description" content="Introduction">
+
+  <link rel="stylesheet" href="/css/spacelab.css">
+  <link rel="stylesheet" href="/css/syntax.css">
+  <link rel="canonical" href="http://yourdomain.com/data/2013/12/16/tpacf.html">
+  <link rel="alternate" type="application/rss+xml" title="UI-DataScience" href="http://yourdomain.com/feed.xml">
+</head>
+    <!-- NAVBAR -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/index">Home</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        
+          
+          <li><a class="page-link" href="/code/">Code</a></li>
+          
+        
+          
+          <li><a class="page-link" href="/data/">Data</a></li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+          <li><a class="page-link" href="/news/">News</a></li>
+          
+        
+          
+          <li><a class="page-link" href="/papers/">Papers</a></li>
+          
+        
+          
+          <li><a class="page-link" href="/people/">People</a></li>
+          
+        
+          
+          <li><a class="page-link" href="/projects/">Ongoing Projects</a></li>
+          
+        
+          
+          <li><a class="page-link" href="/teaching/">Teaching</a></li>
+          
+        
+<!--         <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li> -->
+      </ul>
+      <!-- <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+      </ul> -->
+    </div>
+  </div>
+</nav>
+
+
+
+
+  <div style="max-width: 900px;  margin-left: auto;  margin-right: auto; padding-left:2%; padding-right: 2%; font-size:120%;">
+
+    <body>
+  	  <div style="margin: 20px; margin-top:70px;">
+
+  	        <!-- TO GET LATEX TO WORK RIGHT -->
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$', '$']],
+        displayMath: [ ['$$', '$$']],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+      //,
+      //displayAlign: "left",
+      //displayIndent: "2em"
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+
+
+
+<div style="margin:20px;">
+
+<h1 class="page-header">SDSS DR7 Galaxy Correlation Function Data</h1>
+<p class="post-meta"><time datetime="2013-12-16T00:00:00-06:00" itemprop="datePublished">Dec 16, 2013</time></p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>We are publicly releasing both the angular correltaion function
+estimates (computed with the Landy &amp; Szalay estimor) and the associated
+covariance matrices for the SDSS DR7 galaxy sample first presented in <a href="http://adsabs.harvard.edu/cgi-bin/bib_query?arXiv:1303.2432">Wang, Brunner, &amp; Dolence
+2013</a>.</p>
+
+<h2 id="data">Data</h2>
+
+<h3 id="angular-correlation-functions">Angular Correlation Functions</h3>
+
+<p>This first column of these files is the angle in degrees, the second
+column is the estimator, and the third column is the error of the
+estimator.</p>
+
+<h3 id="covariance-matrices">Covariance Matrices:</h3>
+
+<p>This first row and the first column of these files are the angles in
+degrees, others are the values of the corresponding covariances.</p>
+
+<h2 id="contact">Contact</h2>
+
+<p>If you have any questions about these data, please contact Robert
+Brunner at: bigdog AT illinois.edu</p>
+
+<table>
+<tbody>
+
+<tr>
+<th><center>Catalog
+<th><center>Two-Point Angular Correlation Function</center></th>
+<th><center>Covariance Matrix</center></th>
+
+
+<tr>
+<th><center>17 &lt; r &lt; 21 (Full)</center></th>
+<td><center><a href="/static/data/tpacf/DR7v2.final.17to21.esti.jerror">2PACF</a></center></td>
+<td><center><a href="/static/data/tpacf/DR7v2.final.17to21.cov_true">Cov</a></center></td>
+</tr>
+
+<tr>
+<th><center>17 &lt; r &lt; 18</center></th>
+<td><center><a href="/static/data/tpacf/DR7v2.final.17to18.esti.jerror">2PACF</a></center></td>
+<td><center><a href="/static/data/tpacf/DR7v2.final.17to18.cov_true">Cov</a></center></td>
+</tr>
+
+<tr>
+<th><center>18 &lt; r &lt; 19</center></th>
+<td><center><a href="/static/data/tpacf/DR7v2.final.18to19.esti.jerror">2PACF</a></center></td>
+<td><center><a href="/static/data/tpacf/DR7v2.final.18to19.cov_true">Cov</a></center></td>
+</tr>
+
+<tr>
+<th><center>19 &lt; r &lt; 20</center></th>
+<td><center><a href="/static/data/tpacf/DR7v2.final.19to20.esti.jerror">2PACF</a></center></td>
+<td><center><a href="/static/data/tpacf/DR7v2.final.19to20.cov_true">Cov</a></center></td>
+</tr>
+
+<tr>
+<th><center>20 &lt; r &lt; 21</center></th>
+<td><center><a href="/static/data/tpacf/DR7v2.final.20to21.esti.jerror">2PACF</a></center></td>
+<td><center><a href="/static/data/tpacf/DR7v2.final.20to21.cov_true">Cov</a></center></td>
+</tr>
+
+
+
+
+
+
+</center></th></tr></tbody></table>
+
+
+</div>
+  	        
+  	  </div>
+    </body>
+  </div>
+  <!-- FOOTER  -->
+
+<div class='well' style='margin-top:50px; margin-bottom:0;'>
+<p align='center' style='font-size:120%;'>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+<p align='center' style='font-size:120%'>Copyright (c) 2009-2016 University of Illinois<br>All rights reserved.</p>
+</div>
+
+
+</html>

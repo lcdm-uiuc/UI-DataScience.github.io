@@ -1,0 +1,31 @@
+---
+layout: custom
+title: Papers
+permalink: /papers/
+---
+
+<div class="home" style='margin:20px'>
+
+  <h1 class="page-header">Papers</h1>
+
+
+    <ul style="padding-left:0;">
+      {% for post in site.categories.papers %}
+        
+          <h3>
+            
+            <a href="{{ post.url }}">{{ post.title }}</a><br>
+          </h3>
+
+          <b>{{ post.authors }}, </b>
+
+          <span class="text-success">{{ post.date | date: "%b %Y" }}</span>
+
+        <p>{{ post.summary }}</p>
+        
+      
+      {% endfor %}
+    </ul>
+
+
+</div>
