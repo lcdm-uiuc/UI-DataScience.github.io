@@ -43,7 +43,7 @@ categories: project
 
 ### Data
 
-Shows up in the [Data](http://ui-datascience.github.io/datapage) section of the site. Example YAML: 
+Shows up in the [Data](http://ui-datascience.github.io/data) section of the site. Example YAML: 
 
 ```
 ---
@@ -73,5 +73,12 @@ authors: "Brett Hayes, Robert J. Brunner"
 
 ### Broken Links
 * The tpacf data is missing (see [here](ui-datascience.github.io/data/2013/12/16/tpacf.html))
+* Many missing "Access" links in `Papers`
 * `/static/papers` is missing and is referenced by each post in Papers
-* The LaTeX doesn't render (yet)
+
+### Other issues
+* Too small on mobile (tried to fix in `custom_head.html`, we'll see) 
+
+### Future Work
+* Fix UNDER CONSTRUCTION sections
+
