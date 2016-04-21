@@ -14,10 +14,9 @@ authors: "Matias Carrasco-Kind, Robert J. Brunner"
 **DOI**: N/A
 
 ### Access:
-[MNRAS Journal Article]()  
-[NASA ADS Record]()  
+
 [arXiv Posting](http://arxiv.org/pdf/1403.0044.pdf)  
-[LCDM Repository](/static/papers/comboz.pdf)
+
 
 ### Abstract:
 

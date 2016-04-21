@@ -15,10 +15,9 @@ authors: "Yiran Wang, Robert J. Brunner"
 
 ### Access:
 
-[MNRAS Journal Article]()  
-[NASA ADS Record]()  
-[arXiv Posting]()  
-[LCDM Repository](/static/papers/sdssdr7-groups.pdf)
+[MNRAS Journal Article](http://mnras.oxfordjournals.org/content/444/3/2854.abstract)  
+[arXiv Posting](http://arxiv.org/abs/1407.8230)  
+
 
 ### Abstract:
 

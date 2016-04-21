@@ -18,7 +18,7 @@ authors: "Yiran Wang, Robert J. Brunner"
 [MNRAS Journal Article](http://mnras.oxfordjournals.org/content/432/3/1961)  
 [NASA ADS Record](http://adsabs.harvard.edu/abs/2013MNRAS.432.1961W)  
 [arXiv Posting](http://arxiv.org/abs/1303.2432)  
-[LCDM Repository](/static/papers/sdssdr7-tpacf.pdf)
+
 
 ### Abstract:
 

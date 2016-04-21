@@ -72,12 +72,8 @@ authors: "Brett Hayes, Robert J. Brunner"
 # Known Issues
 
 ### Broken Links
-* The tpacf data is missing (see [here](ui-datascience.github.io/data/2013/12/16/tpacf.html))
-* Many missing "Access" links in `Papers`
-* `/static/papers` is missing and is referenced by each post in Papers
 
-### Other issues
-* Too small on mobile (tried to fix in `custom_head.html`, we'll see) 
+### Other Issues
 
 ### Future Work
 * Fix UNDER CONSTRUCTION sections
