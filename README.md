@@ -78,3 +78,11 @@ authors: "Brett Hayes, Robert J. Brunner"
 ### Future Work
 * Fix UNDER CONSTRUCTION sections
 
+# Changing the Theme
+
+* Go get a theme from [Bootswatch](https://bootswatch.com/)
+* Put it in the `css` directory
+* Edit the line in `_includes/custom_head.html` below to find the new file (not the one that calls `syntax.css`
+
+`<link rel="stylesheet" href="{{ "/css/spacelab.css" | prepend: site.baseurl }}">`
+
