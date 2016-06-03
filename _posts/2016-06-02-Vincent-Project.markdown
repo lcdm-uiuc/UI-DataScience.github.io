@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "High Performance Data Science"
-date:   2016-06-02 15:15:00 -0600
+date:   2016-06-02 19:20:00 -0600
 categories: project
 ---
 
